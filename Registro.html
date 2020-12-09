@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <!-- Diseñamos el estilo que tendra el menú con los margenes y fuentes -->
+	<meta charset="utf-8">
+	<title>iClothes | Registro</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		a:link, a:visited, a:over, a:active 
+        {
+			color: #000000;
+			font-size: 16px;
+		}
+		body 
+        {
+			background: #eee;
+			font-family: verdana;
+		}
+		input
+        {
+			font-size: 23px;
+			size:13;
+		}
+		table
+        {
+			font-size:16px;
+			background-color: #99ffff;
+		}
+		h1
+        {
+			color:#F8F9FA;
+			font-size: 16px;
+		}
+		{
+            font-size: 16px;
+		}
+		ul 
+        {
+			list-style-type: none;
+		}
+		input 
+        {
+			color: <map name="#0000cc">;
+		}
+		#cabecera 
+        {
+			color:#ff9;
+			background-color: #F90404;
+			padding: 12px;
+            width: 728px;
+		}
+        #contenedor 
+        {
+        	margin: 0 ;
+        	width: :800px;
+        }
+        #contenido 
+        {
+        	background-color: #FFFFFF;
+        	float: left;
+        	height: 500px;
+        	padding: 10px;
+        	width: 560px;
+        }
+        #menu 
+        {
+        	background-color: #B81F1F;
+        	float: left;
+        	height: 480px;
+        	padding: 20px;
+        	width: 130px;
+        }
+        #pie 
+        {
+        	background-color: #bbb;
+        	clear: both;
+        	color: #900;
+        	padding: 10px;
+        	text-align: left;
+            width: 730px;
+        }
+        </style>
+    </head>
+    <body>
+    	<!-- Abrimos el body -->
+        <left><h1><font size="9" color="black" face= "Arial" >iClothes</h1></left></font>
+ <body  background="INTERFAZ WEB/IFM12.png" >
+    <div id="contenedor">
+    	<div id="cabecera">
+    		<p ALIGN= "center"><font size="6" color="white" face="Arial">REGISTRO </p></font>
+    	</div>
+        
+    <td>&nbsp;</td>
+    	<div id="menu">
+    		<ul>
+                <!-- Opciones a las que podremos acceder -->
+    			<li><a href="iClothes_Inicio.html"><font size="3" color="white" face="Arial"> Inicio</a></li><p></p><br/> </font>
+    			<li><a href="iClothes_Mujeres.html"><font size="3" color="white" face="Arial"> Mujeres</a></li><p></p><br/> </font>
+    			<li><a href="iClothes_Hombres.html"><font size="3" color="white" face="Arial"> Hombres</a></li><p></p><br/> </font>
+                <li><a href="iClothes_Rebajas.html"><font size="3" color="white" face="Arial"> Rebajas</a></li><p></p></font>
+    		</ul>
+    	</div>
+    	<div id="contenido">
+    		
+    		<p>Para poder acceder al menú principal, ingrese sus credenciales para darse de alta en el sistema.</p>
+    		<!-- Inicia la creacion de la tabla -->
+    		<hr><br>
+    		<form action="http://localhost/REGISTRO.php" method="post"> <!-- Direccion a la que nos mandara y enviaremos los datos una vez guardados -->
+
+
+    			<table border=0 align="center">
+
+    				<tr height="60">
+    					<td colspan="3" align="center" >
+    						CODIGO: <input type="text" id= "vCodigo" name="vCodigo"> <!-- Leemos y guardamos los contenidos que ingresen -->
+    						<hr>
+    					</td>
+    				</tr>
+    				<tr height="40">
+    					<td style="background-color: #00ff99;">
+    					</p>NOMBRE DE USUARIO:</p>
+    				</td>
+    				<td>&nbsp;&nbsp;</td>
+    				<td >
+    					<input type="text" id= "vNombre" name="vNombre">
+    				</td>
+    			</tr>
+    			<tr height="40">
+    				<td>
+    					<p>APELLIDOS:</p>
+    				</td>
+    				<td>&nbsp;&nbsp;</td>
+    				<td>
+    					<input type="text" id= "vApellidos" name="vApellidos">
+    				</td>
+    			</tr>
+    			<tr height="40">
+    				<td colspan="3" align="center">
+    					CORREO <hr>
+    				</td>
+    			</tr>
+    			<tr height="40">
+    				<td colspan="5" align="center">
+    					<input type="text" id= "vCorreo" name="vCorreo" title="CORREO" value="Correo Electronico"><hr size="5">
+    				</td>
+    			</tr>
+                <tr height="40">
+                    <td colspan="3" align="left">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USUARIO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLAVE<hr>
+                    </td>
+    			<tr height="40">
+    			<td><input type="text" id="vUsuario" name="vUsuario" title="USUARIO" value="Nombre de Usuario"></td>
+    			<td>&nbsp;&nbsp; </td>
+    			<td> <input type="password" id="vClave" name="vClave" title="CLAVE DE ACCESO" value=""></td>
+    		</tr>
+    		<tr>
+    			<td colspan="3" align="center"><input type="submit" value="Guardar" ></td>
+
+    		</table>
+
+    	</form>
+    	<br>
+    	<hr>
+
+    </div>
+    <div id="pie">
+    	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a id="link" href="iClothes_Inicio.html">INICIO</a></p> <!-- Pie de pagina -->
+    </div>
+</div>
+</body>
+</html>
